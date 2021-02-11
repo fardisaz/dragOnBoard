@@ -112,7 +112,7 @@ export default {
     },
     dragStart(e) {
       const target = e.target;
-      e.dataTransfer.setData("idea_id", target.id);
+      e.dataTransfer.setData("el_id", target.id);
       setTimeout(() => {
         target.style.display = "none";
       }, 0);

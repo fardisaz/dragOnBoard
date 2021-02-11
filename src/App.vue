@@ -3,21 +3,21 @@
     <board id="board"> </board>
     <div style="position:relative; margin:50px">
       <movable
-        id="idea_1"
+        id="el_1"
         draggable="true"
         class="testmove"
         posTop="444"
         :grid="20"
-        ><span>Idea 1</span></movable
+        ><span>element 1</span></movable
       >
       <movable
-        id="idea_2"
+        id="el_2"
         draggable="true"
         class="testmove"
         posTop="222"
         posLeft="222"
         :grid="20"
-        ><span>Idea 2</span></movable
+        ><span>element 2</span></movable
       >
     </div>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div :id="id" class="board" @dragover.prevent @drop.prevent="drop">
-    <header>New Ideas</header>
+    <header>My Elements</header>
     <slot />
   </div>
 </template>
@@ -10,11 +10,11 @@ export default {
   props: ["id"],
   methods: {
     drop(e) {
-      const idea_id = e.dataTransfer.getData("idea_id");
-      console.log(idea_id);
-      const idea = document.getElementById(idea_id);
-      idea.style.display = "block";
-      e.target.appendChild(idea);
+      const el_id = e.dataTransfer.getData("el_id");
+      console.log(el_id);
+      const element = document.getElementById(el_id);
+      element.style.display = "block";
+      e.target.appendChild(element);
     },
   },
 };
